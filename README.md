@@ -28,23 +28,24 @@ cd backend
 python3 -m venv venv
 source venv/bin/activate  # (Windows: venv\Scripts\activate)
 pip install fastapi uvicorn motor sqlalchemy psycopg2-binary pydantic[dotenv]
-
+```
 ---
 
-## 2️⃣ Run MongoDB & SQL (SQLite or PostgreSQL)
-
+### 2️⃣ Run MongoDB & SQL (SQLite or PostgreSQL)
+```bash
 # MongoDB: Start your local or Docker MongoDB instance.
 # for Mac silicon, on a separate terminal window run:
 sudo mongod --dbpath=/Users/username/data/db
+```
+SQL: SQLite runs automatically, or update the DB URL in sql.py for PostgreSQL/MySQL.
 
-# SQL: SQLite runs automatically, or update the DB URL in sql.py for PostgreSQL/MySQL.
-
-3️⃣ Run the API Server
+### 3️⃣ Run the API Server
+```bash
 uvicorn app.main:app --reload
 
 #macos, run:
 python3 -m uvicorn app.main:app --reload
-
+```
 API will be live at:
 ➡️ http://localhost:8000
 

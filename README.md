@@ -13,7 +13,7 @@ Users can create, view, and study flashcards stored in MongoDB, while user stats
 | **Frontend** | React + TypeScript + Material UI |
 | **Backend** | FastAPI (Python) |
 | **Databases** | MongoDB (Flashcards) + PostgreSQL/SQLite (User stats) |
-| **ORM / ODM** | SQLAlchem
+| **ORM / ODM** | SQLAlchemy
 
 
 ---
